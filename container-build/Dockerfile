@@ -2,7 +2,7 @@
 FROM quay.io/redhattraining/httpd-parent
 
 EXPOSE 8080
-user 1001
+USER 1001
 
 LABEL io.openshift.expose-services="8080:http" \
 	io.k8s.description="Child bild http server" \
